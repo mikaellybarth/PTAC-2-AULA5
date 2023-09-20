@@ -1,5 +1,5 @@
 body {
-    background: rgb(194, 174, 217);
+    background: rgb(112, 88, 137);
 }
 
 .center{
@@ -23,3 +23,22 @@ body {
     padding: 3px 5px;
 
 }
+
+.card {
+  background-color: #FFFFFF;
+  width: 500px;
+  height: 600px;
+  padding: 5px;
+  margin: 20px;
+  overflow: hidden;
+  display: inline-block;
+  }
+
+  .name{
+   
+    font-size: 18px;
+    color: #08040a;
+    
+    padding: 5px 5px;
+ 
+  }

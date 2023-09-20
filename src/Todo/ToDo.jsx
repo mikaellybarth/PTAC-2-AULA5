@@ -47,11 +47,11 @@ export default function ToDo() {
             <button>ADD</button>   
             </form>      
             {lista.map((ativ)=>
-            <div key= {ativ.id}>
+            <div class= "card" key= {ativ.id}>
                 <img src= {ativ.img}alt="" class = "img" />
-                <p>Produto:{ativ.produto},
-                 Marca:{ativ.marca}, 
-                 R$:{ativ.preco}</p>
+                <p class = "name">Produto:{ativ.produto}</p>
+                <p class = "name"> Marca:{ativ.marca}</p>
+                <p class = "name"> R$:{ativ.preco}</p>
             </div>
             )} 
         </div>
