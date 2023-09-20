@@ -1,8 +1,25 @@
 body {
-    background: rgb(103, 40, 181);
+    background: rgb(194, 174, 217);
 }
 
 .center{
     align-items: center;
-    
+    min-height: 6;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    font-size: 46px;
+  color: #FFFFFF;
+  background-color: #665284;
+  padding: 10px 40px;
+}
+
+.nome{
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #665284;
+    padding: 3px 5px;
+
 }

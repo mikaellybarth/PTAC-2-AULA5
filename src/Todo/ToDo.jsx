@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import '../style.css';
 
 export default function ToDo() {
    const [produto, setProduto ] = useState("");
@@ -24,22 +25,22 @@ export default function ToDo() {
     return (
         <div class = "center">
             <Link to="/">home</Link>
-            <h1>Produtos Petshop</h1>    
+            <h1 class = "titulo">Produtos Petshop</h1>    
             <form onSubmit={salvar}>
            
-            <p>Produto:</p>
+            <p class = "nome">Produto:</p>
             <input value={produto} type="text"
             onChange={(e)=>{ setProduto(e.target.value)}}/>
             
-           <p>Marca do produto:</p>
+           <p class = "nome">Marca do produto:</p>
            <input value={marca} type="text"
             onChange={(e)=>{ setMarca(e.target.value)}}/>
            
-           <p>Valor do produto:</p>
+           <p class= "nome">Valor do produto:</p>
            <input value={preco} type="number"
             onChange={(e)=>{ setPreco(e.target.value)}}/>
 
-           <p>img:</p>
+           <p class = "nome"> img:</p>
            <input value={img} type="text"
             onChange={(e)=>{ setImg(e.target.value)}}/>
 
