@@ -22,7 +22,16 @@ export default function ToDo() {
         setImg("");
     };
 
-    
+    const excluir = (id) => {
+    const excluirLista = [];
+    lista.map ((lista) =>{
+    if(lista.id !==id){
+        excluirLista.push(lista);
+    }
+    });
+    setLista(excluirLista)
+     
+    }
 
 
     return (
