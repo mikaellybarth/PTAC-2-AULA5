@@ -21,6 +21,7 @@ export default function ToDo() {
         setPreco("");
         setImg("");
     };
+    
 
     return (
         <div class = "center">
@@ -52,6 +53,7 @@ export default function ToDo() {
                 <p class = "name">Produto:{ativ.produto}</p>
                 <p class = "name"> Marca:{ativ.marca}</p>
                 <p class = "name"> R$:{ativ.preco}</p>
+                <button class = "button" onClick={()=> excluir(ativ.id)}>excluirProduto</button>
             </div>
             )} 
         </div>
