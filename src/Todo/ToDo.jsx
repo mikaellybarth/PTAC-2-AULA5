@@ -21,7 +21,9 @@ export default function ToDo() {
         setPreco("");
         setImg("");
     };
+
     
+
 
     return (
         <div class = "center">
@@ -45,7 +47,7 @@ export default function ToDo() {
            <input value={img} type="text"
             onChange={(e)=>{ setImg(e.target.value)}}/>
 
-            <button>ADD</button>   
+            <button class = "button">ADD</button>   
             </form>      
             {lista.map((ativ)=>
             <div class= "card" key= {ativ.id}>
@@ -53,7 +55,7 @@ export default function ToDo() {
                 <p class = "name">Produto:{ativ.produto}</p>
                 <p class = "name"> Marca:{ativ.marca}</p>
                 <p class = "name"> R$:{ativ.preco}</p>
-                <button class = "button" onClick={()=> excluir(ativ.id)}>excluirProduto</button>
+                <button class = "button" onClick={()=> excluir(ativ.id)}>ExcluirProduto</button>
             </div>
             )} 
         </div>
