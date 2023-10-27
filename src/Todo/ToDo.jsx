@@ -65,7 +65,7 @@ export default function ToDo() {
             {lista.map((ativ)=>
             <div class= "card" key= {ativ.id}>
 
-                <link to={"/detalhe/${objeto.id}"}>
+                <link to={'/detalhe/${objeto.id}'}>
                     <p>{objeto.ativ}</p>
                 </link>
                 
