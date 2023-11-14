@@ -61,19 +61,20 @@ export default function ToDo() {
             onChange={(e)=>{ setImg(e.target.value)}}/>
 
             <button class = "button">ADD</button>   
-            </form>      
-            {lista.map((ativ)=>
-            <div class= "card" key= {ativ.id}>
+            </form>   
+               
+            {lista.map((objeto)=>
+            <div class= "card" key = {objeto.id}>
 
-                <link to={'/detalhe/${objeto.id}'}>
-                    <p>{objeto.ativ}</p>
-                </link>
+                <Link to={`/detalhe/${objeto.id}`}>
+                    <p>{objeto.produto}</p>
+                </Link>
                 
-                <img src= {ativ.img}alt="" class = "img" />
-                <p class = "name">Produto:{ativ.produto}</p>
-                <p class = "name"> Marca:{ativ.marca}</p>
-                <p class = "name"> R$:{ativ.preco}</p>
-                <button class = "button" onClick={()=> excluir(ativ.id)}>ExcluirProduto</button>
+                <img src= {objeto.img}alt="" class = "img" />
+                <p class = "name">Produto:{objeto.produto}</p>
+                <p class = "name"> Marca:{objeto.marca}</p>
+                <p class = "name"> R$:{objeto.preco}</p>
+                <button class = "button" onClick={()=> excluir(objeto.id)}>ExcluirProduto</button>
             </div>
             )} 
         </div>

@@ -5,7 +5,7 @@ export default function detalhe (){
 
     return(
         <div>
-            <h1>bolsonaro presidente e o resto fia da puta</h1>
+            <h1>{id} bolsonaro presidente e o resto fia da puta,... Eu tomei um prejuizo com o bolsonaro de...</h1>
         </div>
     )
 } 
