@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import '../style.css';
 
 export default function ToDo() {
-   const listaLocalStorage = JSON.parse( localStorage.getItem ("Lista"));
+   const listaLocalStorage = JSON.parse( localStorage.getItem ("Lista")) || [];
    const [produto, setProduto ] = useState("");
    const [marca, setMarca ] = useState("");
    const [preco, setPreco ] = useState("");
    const [img, setImg ] = useState("");
-   const [lista, setLista ] = useState(listaLocalStorage || []);
+   const [lista, setLista ] = useState(listaLocalStorage );
    const [id,setId] = useState(listaLocalStorage[listaLocalStorage.length - 1]?.id + 1 || 1);
 
    useEffect (() => { localStorage.setItem("Lista", JSON.stringify(lista))}, [lista]);
